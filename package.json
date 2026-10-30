@@ -1,0 +1,13 @@
+{
+  "name": "product-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:user": "pnpm --filter user dev",
+    "dev:admin": "pnpm --filter admin dev",
+    "build:user": "pnpm --filter user build",
+    "build:admin": "pnpm --filter admin build",
+    "build": "pnpm build:user && pnpm build:admin"
+  },
+  "packageManager": "pnpm@10.0.0"
+}
